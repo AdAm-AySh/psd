@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
+:root{
+    font-size: 16px;
+    --main: #e7dfd8;
+}
+.services .service i{
+    font-size: 40px;
+    color: white;
+    background-color: #000;
+    padding: 14px 18px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 40px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Changa", sans-serif;
+    /* font-weight: 400; */
+    box-sizing: border-box;
+    direction: rtl;
+    text-decoration: none;
+    color: #000;
+}
+body,
+html{
+    height: fit-content;
+    scroll-behavior: smooth;
+}
+body::after{
+    content: '';
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    border-radius: 50%;
+    border:50px solid rgba(247, 223, 245, 0.9);
+    top: -360px;
+    right: -360px;
+}
+.home{
+    display: flex;
+    background-color: var(--main);
+    height: 700px;
+    align-items: stretch;
+    padding: 0;
+    position: relative;
+}
+.home > div{
+    flex-basis: 50%;
+}
+.home .left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+}
+.main-header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    z-index: 10000;
+}
+.logo{
+    width: 90px;
+}
+.home .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+.home .right .text{
+    display: flex;
+    width: 80%;
+    justify-self: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    z-index: 1000000;
+}
+.home .right .text h1{
+    font-size: 48px;
+}
+.home .right .text p{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.home .right .text .btn{
+    outline: 2px solid black;
+    background-color: transparent;
+    width: fit-content;
+    padding: 12px 45px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+.home .right .text .btn:hover{
+    background-color: #000;
+    color: #fff;
+    outline: 2px solid #000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.home .left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.about{
+    min-height: 500px;
+    width: 50%;
+    margin: auto;
+    padding: 60px 20px;
+}
+h2{
+    font-size: 36px;
+    font-weight: 700;
+}
+.about p{
+    line-height: 1.8;
+    font-size: 16px;
+    max-width: 800px;
+}
+.about .logo{
+    margin-bottom: 20px;
+}
+.services{
+    background-color: var(--main);
+    padding: 60px 20px;
+}
+.services .service{
+    width: 88%;
+    margin: 20px auto 0;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.services .service > div{
+    flex-grow: 1;
+    /* flex-basis: 250px; */
+}
+.services .service > div > div{
+    padding: 30px 20px;
+    background-color: #fff;
+    position: relative;
+    flex-basis: 300px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.services .service > div > div:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+.services .service > div > div > p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+.services .service h3{
+    font-size: 22px;
+    text-align: center;
+    margin-top: 15px;
+}
+.services .service p{
+    font-size: 18px;
+}
+.services .service ul{
+    margin-top: 20px;
+}
+.services .service ul li{
+    font-size: 16px;
+    padding-right: 10px;
+    list-style: none;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+.services .service ul li::before{
+    content: '\2022';
+    position: relative;
+    right: -5px;
+    color: #000;
+    font-weight: bold;
+}
+.three{
+    width: 85%;
+    margin: 100px auto;
+    max-width: 1200px;
+}
+.three h2{
+    margin-bottom: 40px;
+}
+.three > div{
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.three img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+}
+.three img:hover{
+    transform: scale(1.05);
+}
+@media (min-width: 711px) and (max-width: 1024px){
+    .home{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .home .right .text{
+        width: 90%;
+    }
+    .home .right .text h1{
+        font-size: 40px;
+    }
+    .about{
+        width: 70%;
+    }
+    .services .service{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .services .service > div{
+        flex-basis: calc(50% - 20px);
+        min-width: 280px;
+    }
+}
+
+@media (max-width: 710px){
+    body::after{
+        right: -400px;
+        top: -400px;
+    }
+    .home{
+        flex-direction: column;
+        height: fit-content;
+        padding: 20px;
+        position: relative;
+    }
+    .home > div{
+        flex-basis: 100%;
+    }
+    .home .left{
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+    .home .right .text{
+        margin-top: 20px;
+        width: 100%;
+        padding: 0 10px;
+    }
+    .home .right .text h1{
+        font-size: 32px;
+        line-height: 1.3;
+    }
+    .home .right .text p{
+        font-size: 18px;
+    }
+    .home .left img{
+        width: 100%;
+        height: 300px;
+        padding: 0;
+        border-radius: 8px;
+    }
+    h2{
+        font-size: 28px;
+    }
+    .about{
+        width: auto;
+        padding: 0 20px;
+        height: fit-content;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .services{
+        padding: 30px 20px;
+    }
+    .services .service{
+        flex-direction: column;
+        width: 100%;
+    }
+    .services .service > div{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .services .service > div > div{
+        min-height: auto;
+    }
+    .three{
+        width: 95%;
+        margin: 50px auto;
+        padding: 0 10px;
+    }
+    .three img{
+        height: 250px;
+    }
+}

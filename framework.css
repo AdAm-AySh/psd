@@ -1,0 +1,241 @@
+/* Start Box */
+.d-flex{
+	display: flex;
+}
+.d-grid{
+	display: grid;
+}
+.d-block{
+	display: block;
+}
+.d-inline{
+	display: inline;
+}
+.d-inline-block{
+	display: inline-block;
+}
+.justify-center{
+	justify-content: center;
+}
+.space-between{
+	justify-content: space-between;
+}
+.align-center{
+	align-items: center;
+}
+.gap-5{
+	gap: 5px;
+}
+.gap-10{
+	gap: 10px;
+}
+.gap-15{
+	gap: 15px;
+}
+.gap-20{
+	gap: 20px;
+}
+.fg-1{
+	flex: 1;
+}
+.f-colunm{
+	flex-direction: column;
+}
+.f-row{
+	flex-direction: row;
+}
+.f-wrap{
+	flex-wrap: wrap;
+}
+@media (max-width: 920px){
+	.block-mobile{
+		display: block;
+	}
+	.hide-mobile{
+		display: none;
+	}
+}
+/* End Box */
+
+/* Start Padding + Margin */
+.p-10{
+	padding: 10px;
+}
+.p-15{
+	padding: 15px;
+}
+.p-20{
+	padding: 20px;
+}
+.p-25{
+	padding: 25px;
+}
+.p-30{
+	padding: 30px;
+}
+.pt-0{
+	padding-top: 0;
+}
+.pt-10{
+	padding-top: 10px;
+}
+.pt-15{
+	padding-top: 15px;
+}
+.pt-30{
+	padding-top: 30px;
+}
+.pr{
+	padding-right: 10px;
+}
+.pl-30{
+	padding-left: 30px;
+}
+.pb-10{
+	padding-bottom: 10px;
+}
+.pb-30{
+	padding-bottom: 50px;
+}
+.m-0{
+	margin: 0;
+}
+.m-10{
+	margin: 10px;
+}
+.m-15{
+	margin: 15px;
+}
+.m-20{
+	margin: 20px;
+}
+.mt-0{
+	margin-top: 0;
+}
+.mt-5{
+	margin-top: 5px;
+}
+.mt-10{
+	margin-top: 10px;
+}
+.mt-20{
+	margin-top: 20px;
+}
+.mt{
+	margin-top: 50px;
+}
+.mb-5{
+	margin-bottom: 5px;
+}
+.mb-10{
+	margin-bottom: 10px;
+}
+.mb-15{
+	margin-bottom: 15px;
+}
+.mb-20{
+	margin-bottom: 20px;
+}
+.mb-50{
+	margin-bottom: 50px;
+}
+.ml-5{
+	margin-left: 5px;
+}
+.ml-10{
+	margin-left: 10px;
+}
+.ml-15{
+	margin-left: 15px;
+}
+.ml-20{
+	margin-left: 20px;
+}
+.mr-20{
+	margin-right: 20px;
+}
+.m-auto{
+	margin: 0 auto;
+}
+/* End Padding + Margin */
+
+/* Start Color */
+.bg-white{
+	background-color: #fff;
+}
+.bg-red{
+	background-color: red;
+}
+.bg-eee{
+	background-color: #eee;
+}
+.c-black{
+	color: black;
+}
+.c-blue{
+	color: white;
+}
+.c-white{
+	color: white;
+}
+/* End Color */
+
+/* Start Position */
+.p-relative{
+	position: relative;
+}
+/* End Position */
+
+/* Start Fonts */
+.text-c{
+	text-align: center;
+}
+.fs-14{
+	font-size: 14px;
+}
+@media (max-width: 767px){
+	.text-c-mobile{
+		text-align: center;
+	}
+}
+/* End Fonts */
+
+/* Start Border */
+.rad-6{
+	border-radius: 6px;
+}
+.rad-10{
+	border-radius: 10px;
+}
+/* End Border */
+
+/*Start Components*/
+.betwwen-flex{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*End Components*/
+
+/* Start Width & Height */
+.w-full{
+	width: 100%;
+}
+.w-fit{
+	width: fit-content;
+}
+.w-100{
+	width: 79px;
+}
+.h-full{
+	height: 100vh;
+}
+.h-fit{
+	height: fit-content;
+}
+/* End Width & Height */
